@@ -31,7 +31,7 @@ public class ClientApplication {
         cfg.fullscreen = CommonApp.commonProperties.getInteger("FULLSCREEN") == 1;
 
         new LwjglApplication(application, cfg);
-
+        application.setCrashOnErrorInRender(!DebugFlags.DEBUG_MODE_INACTIVE);
         Utils.createThreadExceptionHandler(application);
 
         WaitLibrary.waitClientCoreInitialized(application);
