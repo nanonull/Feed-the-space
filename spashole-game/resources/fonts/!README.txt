@@ -1,0 +1,1 @@
+Copy font image into images_for_atlas/fonts

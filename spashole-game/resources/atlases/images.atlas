@@ -1,0 +1,244 @@
+
+images.png
+size: 2048,1024
+format: RGBA8888
+filter: MipMapLinearLinear,Linear
+repeat: none
+1px_red
+  rotate: false
+  xy: 1543, 513
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+1px_white
+  rotate: false
+  xy: 2045, 1015
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+engine
+  rotate: false
+  xy: 1942, 304
+  size: 78, 66
+  orig: 78, 66
+  offset: 0, 0
+  index: -1
+explosion1
+  rotate: false
+  xy: 1700, 7
+  size: 54, 58
+  orig: 54, 58
+  offset: 0, 0
+  index: -1
+explosion12
+  rotate: false
+  xy: 1894, 138
+  size: 54, 58
+  orig: 54, 58
+  offset: 0, 0
+  index: -1
+explosion3
+  rotate: false
+  xy: 1756, 7
+  size: 54, 58
+  orig: 54, 58
+  offset: 0, 0
+  index: -1
+explosion6
+  rotate: false
+  xy: 1812, 6
+  size: 54, 58
+  orig: 54, 58
+  offset: 0, 0
+  index: -1
+explosion8
+  rotate: false
+  xy: 1868, 6
+  size: 54, 58
+  orig: 54, 58
+  offset: 0, 0
+  index: -1
+flag
+  rotate: false
+  xy: 1262, 158
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+fonts/Consolas_12_italic
+  rotate: false
+  xy: 1568, 67
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+fonts/Consolas_14
+  rotate: false
+  xy: 1569, 197
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1
+fonts/Consolas_18
+  rotate: false
+  xy: 1, 504
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+fonts/consolas_28
+  rotate: false
+  xy: 1311, 246
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+frog
+  rotate: false
+  xy: 1827, 198
+  size: 67, 57
+  orig: 67, 57
+  offset: 0, 0
+  index: -1
+frogGreen
+  rotate: false
+  xy: 1942, 245
+  size: 67, 57
+  orig: 67, 57
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 1698, 67
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+glow_32x32
+  rotate: false
+  xy: 1262, 124
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+gun
+  rotate: false
+  xy: 2022, 327
+  size: 23, 43
+  orig: 23, 43
+  offset: 0, 0
+  index: -1
+house
+  rotate: false
+  xy: 1826, 372
+  size: 220, 142
+  orig: 220, 142
+  offset: 0, 0
+  index: -1
+meteor
+  rotate: false
+  xy: 1005, 198
+  size: 304, 304
+  orig: 304, 304
+  offset: 0, 0
+  index: -1
+pixel_explosion
+  rotate: false
+  xy: 1827, 257
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: -1
+planet1
+  rotate: false
+  xy: 1, 2
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+planet2
+  rotate: false
+  xy: 1543, 516
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+player_schematic
+  rotate: false
+  xy: 2022, 309
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+ship_blue
+  rotate: false
+  xy: 1005, 9
+  size: 255, 187
+  orig: 255, 187
+  offset: 0, 0
+  index: -1
+ship_broken
+  rotate: false
+  xy: 1569, 327
+  size: 255, 187
+  orig: 255, 187
+  offset: 0, 0
+  index: -1
+ship_red
+  rotate: false
+  xy: 1311, 57
+  size: 255, 187
+  orig: 255, 187
+  offset: 0, 0
+  index: -1
+space_parallax/space1
+  rotate: false
+  xy: 515, 504
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+space_parallax/space2
+  rotate: false
+  xy: 1029, 504
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+sun
+  rotate: false
+  xy: 1828, 132
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sun2
+  rotate: false
+  xy: 503, 2
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+sun_blue
+  rotate: false
+  xy: 1828, 66
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sun_green
+  rotate: false
+  xy: 1568, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sun_red
+  rotate: false
+  xy: 1634, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

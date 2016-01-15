@@ -1,0 +1,28 @@
+uniform sampler2D Texture0;
+uniform sampler2D Texture1;
+uniform sampler2D Texture2;
+
+varying vec2 v_texCoords;
+varying vec4 v_terrainSoil;
+varying vec3 v_lightDiffuse;
+
+//-------------------
+void main()
+{
+ vec4 texel0, texel1, texel2, resultColor;
+
+ texel0 = texture2D(Texture0, v_texCoords);
+ texel1 = texture2D(Texture1, v_texCoords);
+ texel2 = texture2D(Texture2, v_texCoords);
+
+ // get mixed texel color
+ resultColor.x = (texel0.x * v_terrainSoil.x + texel1.x * v_terrainSoil.y + texel2.x * v_terrainSoil.z);
+ resultColor.y = (texel0.y * v_terrainSoil.x + texel1.y * v_terrainSoil.y + texel2.y * v_terrainSoil.z);
+ resultColor.z = (texel0.z * v_terrainSoil.x + texel1.z * v_terrainSoil.y + texel2.z * v_terrainSoil.z);
+
+ // add light diffuse
+ resultColor.x = resultColor.x * v_lightDiffuse.x;
+ resultColor.y = resultColor.y * v_lightDiffuse.y;
+ resultColor.z = resultColor.z * v_lightDiffuse.z;
+ gl_FragColor = resultColor;
+}

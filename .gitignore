@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+*.log
+*.log.*
+test-output
+test-output-maven
+release
+build
+
+src/main/java/conversion7/MainSomeDebugs.java
+testng-customsuite.xml

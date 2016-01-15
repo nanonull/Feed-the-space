@@ -1,0 +1,73 @@
+import com.sun.org.apache.xalan.internal.xsltc.cmdline.Compile
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+setEncoding(this, "UTF-8")
+
+version = '1.0'
+
+ext {
+    groovyVersion = '2.4.3'
+    javaVersion = '1.8'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+def setEncoding(def build, String enc) {
+    println sprintf('setEncoding %s %s', enc, build)
+    build.tasks.withType(Compile) {
+        options.encoding = enc
+    }
+    build.tasks.withType(GroovyCompile) {
+        groovyOptions.encoding = enc
+    }
+    build.compileJava.options.encoding = enc
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'groovy'
+    apply plugin: 'idea'
+
+    // FIXME this is only root
+    setEncoding(this, "UTF-8")
+
+    version = this.version
+
+    sourceCompatibility = javaVersion
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile fileTree(dir: '../libs', include: '*.jar')
+        compile group: 'org.codehaus.groovy', name: 'groovy-all', version: groovyVersion
+        compile "net.namekdev.entity_tracker:artemis-entity-tracker:0.2.1"
+        compile "net.namekdev.entity_tracker:artemis-entity-tracker-gui:0.2.1"
+    }
+
+    jar {
+        manifest.attributes provider: 'gradle'
+    }
+
+    sourceSets {
+        main.java.srcDirs = []
+        main {
+            groovy {
+                srcDirs = ['src/main']
+            }
+        }
+
+        test.java.srcDirs = []
+        test {
+            groovy {
+                srcDirs = ['src/test']
+            }
+        }
+    }
+}
