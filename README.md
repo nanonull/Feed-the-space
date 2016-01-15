@@ -9,9 +9,8 @@ It uses: Libgdx java framework (game engine), box2d library (physics) , artemis-
 Requires [Java 8 JRE](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).<br>
 Language (en/ru) and Fullscreen/Windowed mode could be changed in common.properties file.<br>
 
-#### Assembled game:
-[Download from dropbox](https://www.dropbox.com/s/atmjothf9u7ayon/FTS_1_0.zip?dl=0)<br>
-Unzip and execute !RUN.bat file.
+#### Download game:
+[Game homepage] (http://them.itch.io/feed-the-space)
 
 #### From sources:
 Download/clone sources.<br>
