@@ -5,7 +5,7 @@ apply plugin: 'idea'
 
 setEncoding(this, "UTF-8")
 
-version = '1.0'
+version = '1.1'
 
 ext {
     groovyVersion = '2.4.3'
@@ -33,10 +33,8 @@ subprojects {
     apply plugin: 'groovy'
     apply plugin: 'idea'
 
-    // FIXME this is only root
-    setEncoding(this, "UTF-8")
-
-    version = this.version
+    setEncoding(project, "UTF-8")
+    project.version = this.version
 
     sourceCompatibility = javaVersion
 

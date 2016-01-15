@@ -1,3 +1,7 @@
+ext {
+    mainClass = 'conversion7.spashole.game.ClientApplication'
+}
+
 dependencies {
     compile 'com.google.code.gson:gson:2.5'
     compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.5.1'
@@ -5,13 +9,47 @@ dependencies {
     compile 'org.jsoup:jsoup:1.8.3'
 }
 
+String fatJarName = null
 task fatJar(type: Jar) {
+    println 'fatJar'
     manifest {
         attributes 'Implementation-Title': 'Feed the space',
                 'Implementation-Version': version,
-                'Main-Class': 'conversion7.spashole.game.ClientApplication'
+                'Main-Class': "${mainClass}"
     }
     baseName = project.name
+    fatJarName = baseName + '-' + version + '.jar'
+    println 'fatJarName: ' + fatJarName
+//    from { configurations.compile.first() } // test
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
+
+task copyJarToL4J(type: Copy) {
+    def root = new File("").getAbsoluteFile()
+    println root.getAbsolutePath()
+    from new File(root, "build\\libs\\${fatJarName}")
+    into new File(root, 'build\\launch4j\\lib')
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'gradle.plugin.edu.sc.seis.gradle:launch4j:1.6.1'
+    }
+}
+apply plugin: 'edu.sc.seis.launch4j'
+
+// dont let l4j rewrite fat jar!
+jar.enabled = false
+launch4j {
+    outfile = 'Game.exe'
+    mainClassName = "${mainClass}"
+    assert fatJarName : 'fatJar must be executed before!'
+    jar = "lib/${fatJarName}"
+}
+
