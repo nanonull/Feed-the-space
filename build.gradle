@@ -2,7 +2,6 @@ import com.sun.org.apache.xalan.internal.xsltc.cmdline.Compile
 
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'groovy'
 
 setEncoding(this, "UTF-8")
 
@@ -27,10 +26,6 @@ def setEncoding(def build, String enc) {
         groovyOptions.encoding = enc
     }
     build.compileJava.options.encoding = enc
-}
-
-dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: "${groovyVersion}"
 }
 
 subprojects {
