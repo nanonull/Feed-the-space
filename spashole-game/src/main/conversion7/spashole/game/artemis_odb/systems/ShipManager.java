@@ -19,7 +19,7 @@ import conversion7.spashole.game.artemis_odb.systems.box2d.Box2dBodySystem;
 import conversion7.spashole.game.artemis_odb.systems.gun.GunSystem;
 import conversion7.spashole.game.stages.SolarSystemScene;
 import conversion7.spashole.game.utils.SpasholeUtils;
-import org.junit.Assert;
+import org.testng.Assert;
 
 import java.util.UUID;
 
@@ -30,7 +30,7 @@ public class ShipManager extends Manager {
     public static void setPilot(UUID pilotUuid, Entity shipEntity) {
         ShipComponent shipComponent = ShipManager.components.get(shipEntity);
         Entity pilotEntity = SpasholeApp.ARTEMIS_UUIDS.getEntity(pilotUuid);
-        Assert.assertTrue("Human only!", HumanManager.components.has(pilotEntity));
+        Assert.assertTrue(HumanManager.components.has(pilotEntity), "Human only!");
         shipComponent.pilotUuid = pilotUuid;
         DisableEntitySystem.components.create(pilotEntity);
 

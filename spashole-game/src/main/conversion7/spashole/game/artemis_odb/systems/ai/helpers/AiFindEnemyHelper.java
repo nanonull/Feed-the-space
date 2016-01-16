@@ -18,8 +18,8 @@ import conversion7.spashole.game.artemis_odb.systems.box2d.Box2dSensorComponent;
 import conversion7.spashole.game.artemis_odb.systems.box2d.Box2dSensorManager;
 import conversion7.spashole.game.artemis_odb.systems.gun.GunComponent;
 import conversion7.spashole.game.artemis_odb.systems.gun.GunSystem;
-import org.junit.Assert;
 import org.slf4j.Logger;
+import org.testng.Assert;
 
 import java.util.UUID;
 

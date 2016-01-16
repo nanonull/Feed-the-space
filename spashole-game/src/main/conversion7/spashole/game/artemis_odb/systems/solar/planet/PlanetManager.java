@@ -50,8 +50,8 @@ import conversion7.spashole.game.artemis_odb.systems.box2d.Box2dWorldSystem;
 import conversion7.spashole.game.artemis_odb.systems.gun.StationaryGunComponent;
 import conversion7.spashole.game.artemis_odb.systems.gun.StationaryGunSystem;
 import conversion7.spashole.game.utils.SpasholeUtils;
-import org.junit.Assert;
 import org.slf4j.Logger;
+import org.testng.Assert;
 
 import java.util.UUID;
 
@@ -92,7 +92,7 @@ public class PlanetManager extends Manager {
     public static Entity create(String name, float worldX, float worldY, Stage stage
             , TextureRegion textureRegion, RaceComp.Race race) {
         LOG.info("Create planet: {}, race: {}", name, race);
-        Assert.assertNotNull("Planet name!", name);
+        Assert.assertNotNull(name, "Planet name!");
 
         // entity
         Entity planet = SpasholeApp.ARTEMIS_ENGINE.createEntity();

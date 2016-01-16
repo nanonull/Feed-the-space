@@ -31,7 +31,7 @@ import conversion7.spashole.game.artemis_odb.systems.box2d.Box2dBodyComponent;
 import conversion7.spashole.game.artemis_odb.systems.box2d.Box2dBodySystem;
 import conversion7.spashole.game.artemis_odb.systems.box2d.Box2dCollisionTriggerComp;
 import conversion7.spashole.game.stages.SolarSystemScene;
-import org.junit.Assert;
+import org.testng.Assert;
 
 import java.util.UUID;
 

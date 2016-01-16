@@ -7,6 +7,7 @@ dependencies {
     compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.5.1'
     compile 'org.json:json:20151123'
     compile 'org.jsoup:jsoup:1.8.3'
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
 }
 
 String fatJarName = null
