@@ -10,6 +10,7 @@ version = '1.1.1'
 ext {
     groovyVersion = '2.4.3'
     javaVersion = '1.8'
+    gdxVersion = '1.6.0'
 }
 
 repositories {
@@ -47,8 +48,9 @@ subprojects {
         compile group: 'org.codehaus.groovy', name: 'groovy-all', version: "${groovyVersion}"
         compile 'junit:junit:4.12'
 
-        compile group: 'com.badlogicgames.gdx', name: 'gdx-box2d', version: '1.6.0'
-        compile group: 'com.badlogicgames.gdx', name: 'gdx-box2d-platform', version: '1.6.0', classifier: 'natives-desktop'
+        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile group: 'com.badlogicgames.gdx', name: 'gdx-box2d', version: "$gdxVersion"
+        compile group: 'com.badlogicgames.gdx', name: 'gdx-box2d-platform', version: "$gdxVersion", classifier: 'natives-desktop'
         compile "net.namekdev.entity_tracker:artemis-entity-tracker:0.2.1"
         compile "net.namekdev.entity_tracker:artemis-entity-tracker-gui:0.2.1"
     }
