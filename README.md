@@ -20,3 +20,13 @@ Run ClientApplication class in 'spashole-game' module.<br>
 [Devlog](http://itch.io/jam/libgdxjam/topic/12183/feed-the-space-by-them-devlog#post-6444)<br>
 It took ~150 hours to create it (however, some basic components, like custom 2d window, had been created before jam).<br>
 ~6k lines of code<br>
+
+##### What intresting:
+- how to organize entities and components in ECS;
+- how to synchronize physics world (box2d) with view application (libgdx render);
+- how to work with libgdx stage/actors/ui;
+- how to organize text/quest dialogs;
+- how to organize localized resources;
+- how to use gradle multi-module project;
+- how to convert overlap2d scene into game entities;
+- how to create simple repl with custom commands;
