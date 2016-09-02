@@ -3,77 +3,78 @@ package conversion7.spashole.game.story.dialogs.convertor;
 import java.util.HashMap;
 import java.util.Map;
 
+/**It requires project encoding = UTF-8 */
 class Translit {
 
     private static final Map<String, String> letters = new HashMap<String, String>();
 
     static {
-        letters.put("À", "A");
-        letters.put("Á", "B");
-        letters.put("Â", "V");
-        letters.put("Ã", "G");
-        letters.put("Ä", "D");
-        letters.put("Å", "E");
-        letters.put("¨", "E");
-        letters.put("Æ", "ZH");
-        letters.put("Ç", "Z");
-        letters.put("È", "I");
-        letters.put("É", "I");
-        letters.put("Ê", "K");
-        letters.put("Ë", "L");
-        letters.put("Ì", "M");
-        letters.put("Í", "N");
-        letters.put("Î", "O");
-        letters.put("Ï", "P");
-        letters.put("Ğ", "R");
-        letters.put("Ñ", "S");
-        letters.put("Ò", "T");
-        letters.put("Ó", "U");
-        letters.put("Ô", "F");
-        letters.put("Õ", "H");
-        letters.put("Ö", "C");
-        letters.put("×", "CH");
-        letters.put("Ø", "SH");
-        letters.put("Ù", "SH");
-        letters.put("Ú", "'");
-        letters.put("Û", "Y");
-        letters.put("Ú", "'");
-        letters.put("İ", "E");
-        letters.put("Ş", "U");
-        letters.put("ß", "YA");
-        letters.put("à", "a");
-        letters.put("á", "b");
-        letters.put("â", "v");
-        letters.put("ã", "g");
-        letters.put("ä", "d");
-        letters.put("å", "e");
-        letters.put("¸", "e");
-        letters.put("æ", "zh");
-        letters.put("ç", "z");
-        letters.put("è", "i");
-        letters.put("é", "i");
-        letters.put("ê", "k");
-        letters.put("ë", "l");
-        letters.put("ì", "m");
-        letters.put("í", "n");
-        letters.put("î", "o");
-        letters.put("ï", "p");
-        letters.put("ğ", "r");
-        letters.put("ñ", "s");
-        letters.put("ò", "t");
-        letters.put("ó", "u");
-        letters.put("ô", "f");
-        letters.put("õ", "h");
-        letters.put("ö", "c");
-        letters.put("÷", "ch");
-        letters.put("ø", "sh");
-        letters.put("ù", "sh");
-        letters.put("ú", "'");
-        letters.put("û", "y");
-        letters.put("ú", "'");
-        letters.put("ı", "e");
-        letters.put("ş", "u");
-        letters.put("ÿ", "ya");
+        letters.put("Ğ", "A");
+        letters.put("Ğ‘", "B");
+        letters.put("Ğ’", "V");
+        letters.put("Ğ“", "G");
+        letters.put("Ğ”", "D");
+        letters.put("Ğ•", "E");
+        letters.put("Ğ", "E");
+        letters.put("Ğ–", "ZH");
+        letters.put("Ğ—", "Z");
+        letters.put("Ğ˜", "I");
+        letters.put("Ğ™", "I");
+        letters.put("Ğš", "K");
+        letters.put("Ğ›", "L");
+        letters.put("Ğœ", "M");
+        letters.put("Ğ", "N");
+        letters.put("Ğ", "O");
+        letters.put("ĞŸ", "P");
+        letters.put("Ğ ", "R");
+        letters.put("Ğ¡", "S");
+        letters.put("Ğ¢", "T");
+        letters.put("Ğ£", "U");
+        letters.put("Ğ¤", "F");
+        letters.put("Ğ¥", "H");
+        letters.put("Ğ¦", "C");
+        letters.put("Ğ§", "CH");
+        letters.put("Ğ¨", "SH");
+        letters.put("Ğ©", "SH");
+        letters.put("Ğª", "'");
+        letters.put("Ğ«", "Y");
+        letters.put("Ğª", "'");
+        letters.put("Ğ­", "E");
+        letters.put("Ğ®", "U");
+        letters.put("Ğ¯", "YA");
+        letters.put("Ğ°", "a");
+        letters.put("Ğ±", "b");
+        letters.put("Ğ²", "v");
+        letters.put("Ğ³", "g");
+        letters.put("Ğ´", "d");
+        letters.put("Ğµ", "e");
+        letters.put("Ñ‘", "e");
+        letters.put("Ğ¶", "zh");
+        letters.put("Ğ·", "z");
+        letters.put("Ğ¸", "i");
+        letters.put("Ğ¹", "i");
+        letters.put("Ğº", "k");
+        letters.put("Ğ»", "l");
+        letters.put("Ğ¼", "m");
+        letters.put("Ğ½", "n");
+        letters.put("Ğ¾", "o");
+        letters.put("Ğ¿", "p");
+        letters.put("Ñ€", "r");
+        letters.put("Ñ", "s");
+        letters.put("Ñ‚", "t");
+        letters.put("Ñƒ", "u");
+        letters.put("Ñ„", "f");
+        letters.put("Ñ…", "h");
+        letters.put("Ñ†", "c");
+        letters.put("Ñ‡", "ch");
+        letters.put("Ñˆ", "sh");
+        letters.put("Ñ‰", "sh");
+        letters.put("ÑŠ", "'");
+        letters.put("Ñ‹", "y");
+        letters.put("ÑŠ", "'");
+        letters.put("Ñ", "e");
+        letters.put("Ñ", "u");
+        letters.put("Ñ", "ya");
     }
 
     public static String toTranslit(String text) {
@@ -91,7 +92,7 @@ class Translit {
 
 
     public static void main(String[] args) {
-        String test = "Ïğèâåò, Ìèğ. İòî Äëèííàÿ Ñòğîêà ñ Ğàçíûìè ñèìâîëàìè ğóññêîãî àëôàâèòà.";
+        String test = "ĞŸÑ€Ğ¸Ğ²ĞµÑ‚, ĞœĞ¸Ñ€. Ğ­Ñ‚Ğ¾ Ğ”Ğ»Ğ¸Ğ½Ğ½Ğ°Ñ Ğ¡Ñ‚Ñ€Ğ¾ĞºĞ° Ñ Ğ Ğ°Ğ·Ğ½Ñ‹Ğ¼Ğ¸ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ°Ğ¼Ğ¸ Ñ€ÑƒÑÑĞºĞ¾Ğ³Ğ¾ Ğ°Ğ»Ñ„Ğ°Ğ²Ğ¸Ñ‚Ğ°.";
         System.out.println("toTranslit(test) = " + toTranslit(test));
     }
 
